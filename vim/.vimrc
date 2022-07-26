@@ -76,4 +76,4 @@ set showmatch
 set t_Co=256
 set background=dark
 
-colorschme gruvbox
+colorscheme gruvbox

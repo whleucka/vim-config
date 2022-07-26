@@ -7,8 +7,8 @@ filetype off
 " Plugins
 call plug#begin()
 
-Plug "tpope/vim-sensible"
-Plug "ghifarit53/tokyonight-vim"
+Plug 'tpope/vim-sensible'
+Plug 'ghifarit53/tokyonight-vim'
 
 call plug#end()
 

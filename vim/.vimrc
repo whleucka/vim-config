@@ -8,7 +8,7 @@ filetype off
 call plug#begin()
 
 Plug 'tpope/vim-sensible'
-Plug 'ghifarit53/tokyonight-vim'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -76,6 +76,4 @@ set showmatch
 set t_Co=256
 set background=dark
 
-let g:tokyonight_style = 'night' " available: night, storm
-let g:tokyonight_enable_italic = 1
-colorscheme tokyonight
+colorschme gruvbox

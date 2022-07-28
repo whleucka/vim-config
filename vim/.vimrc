@@ -9,6 +9,7 @@ call plug#begin()
 
 Plug 'tpope/vim-sensible'
 Plug 'morhetz/gruvbox'
+Plug 'junegunn/fzf', { 'do': 'yes \| ./install' }
 
 call plug#end()
 
@@ -19,6 +20,8 @@ syntax on
 filetype plugin indent on
 
 let mapleader = " "
+
+set nowrap
 
 " Security
 set modelines=0
@@ -38,9 +41,9 @@ set encoding=utf-8
 
 " Formatting
 set colorcolumn=80
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set noshiftround
 
@@ -77,3 +80,14 @@ set t_Co=256
 set background=dark
 
 colorscheme gruvbox
+
+hi Normal guibg=NONE ctermbg=NONE
+
+" Mappings
+nnoremap <leader>w :update!<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <C-p> :FZF<CR>
+nnoremap H :tabprev<CR>
+nnoremap L :tabnext<CR>
+imap jk <ESC>
+imap kj <ESC>

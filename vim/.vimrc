@@ -8,7 +8,9 @@ filetype off
 call plug#begin()
 
 Plug 'tpope/vim-sensible'
-Plug 'morhetz/gruvbox'
+Plug 'sheerun/vim-polyglot'
+"Plug 'morhetz/gruvbox'
+Plug 'ghifarit53/tokyonight-vim'
 Plug 'junegunn/fzf', { 'do': 'yes \| ./install' }
 
 call plug#end()
@@ -74,12 +76,16 @@ set incsearch
 set ignorecase
 set smartcase
 set showmatch
+set mouse=a
 
 " Color scheme (terminal)
 set t_Co=256
 set background=dark
 
-colorscheme gruvbox
+"colorscheme gruvbox
+let g:tokyonight_style = 'storm' " available: night, storm
+"let g:tokyonight_enable_italic = 1
+colorscheme tokyonight
 
 hi Normal guibg=NONE ctermbg=NONE
 
@@ -87,7 +93,9 @@ hi Normal guibg=NONE ctermbg=NONE
 nnoremap <leader>w :update!<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <C-p> :FZF<CR>
-nnoremap H :tabprev<CR>
-nnoremap L :tabnext<CR>
+nnoremap < :tabprev<CR>
+nnoremap > :tabnext<CR>
+nnoremap H ^
+nnoremap L $
 imap jk <ESC>
 imap kj <ESC>

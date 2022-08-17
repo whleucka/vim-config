@@ -8,9 +8,9 @@ filetype off
 call plug#begin()
 
 Plug 'tpope/vim-sensible'
-Plug 'sheerun/vim-polyglot'
 "Plug 'morhetz/gruvbox'
 Plug 'ghifarit53/tokyonight-vim'
+Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'do': 'yes \| ./install' }
 
 call plug#end()
@@ -24,6 +24,11 @@ filetype plugin indent on
 let mapleader = " "
 
 set nowrap
+
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
 
 " Security
 set modelines=0
@@ -41,6 +46,16 @@ set visualbell
 " Encoding
 set encoding=utf-8
 
+" Give more space for displaying messages.
+set cmdheight=2
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=50
+
+" Status bar config
+set statusline+=%#warningmsg#
+
 " Formatting
 set colorcolumn=80
 set tabstop=2
@@ -48,12 +63,20 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set noshiftround
+set smartindent
+
+
 
 " Cursor motion
 set scrolloff=3
 set backspace=indent,eol,start
 set matchpairs+=<:> " use % to jump between pairs
 runtime! macros/matchit.vim
+
+
+set guicursor=
+set noshowmatch
+set modifiable
 
 " Allow hidden buffers
 set hidden
@@ -77,6 +100,7 @@ set ignorecase
 set smartcase
 set showmatch
 set mouse=a
+
 
 " Color scheme (terminal)
 set t_Co=256

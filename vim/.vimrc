@@ -117,8 +117,8 @@ hi Normal guibg=NONE ctermbg=NONE
 nnoremap <leader>w :update!<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <C-p> :FZF<CR>
-nnoremap <leader>< :tabprev<CR>
-nnoremap <leader>> :tabnext<CR>
+nnoremap <leader>, :tabprev<CR>
+nnoremap <leader>. :tabnext<CR>
 nnoremap H ^
 nnoremap L $
 imap jk <ESC>

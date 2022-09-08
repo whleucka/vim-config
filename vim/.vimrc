@@ -65,17 +65,16 @@ set expandtab
 set noshiftround
 set smartindent
 
-
+let &t_ut=''
 
 " Cursor motion
-set scrolloff=3
+set scrolloff=6
 set backspace=indent,eol,start
 set matchpairs+=<:> " use % to jump between pairs
 runtime! macros/matchit.vim
 
 
 set guicursor=
-set noshowmatch
 set modifiable
 
 " Allow hidden buffers

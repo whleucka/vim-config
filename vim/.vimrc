@@ -66,6 +66,7 @@ set noshiftround
 set smartindent
 
 let &t_ut=''
+set belloff=all
 
 " Cursor motion
 set scrolloff=6

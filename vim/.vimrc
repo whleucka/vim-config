@@ -114,9 +114,7 @@ let g:tokyonight_transparent_background = 1
 colorscheme tokyonight
 
 " Status Bar
-let g:lightline = {
-      \ 'colorscheme': 'one',
-      \ }
+let g:lightline = {'colorscheme' : 'tokyonight'}
 
 hi Normal guibg=NONE ctermbg=NONE
 

@@ -107,7 +107,8 @@ set background=dark
 
 "colorscheme gruvbox
 let g:tokyonight_style = 'storm' " available: night, storm
-"let g:tokyonight_enable_italic = 1
+let g:tokyonight_enable_italic = 1
+let g:tokyonight_transparent_background = 1
 colorscheme tokyonight
 
 hi Normal guibg=NONE ctermbg=NONE
@@ -116,10 +117,10 @@ hi Normal guibg=NONE ctermbg=NONE
 nnoremap <leader>w :update!<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <C-p> :FZF<CR>
-nnoremap <leader>, :tabprev<CR>
-nnoremap <leader>. :tabnext<CR>
-nnoremap H ^
-nnoremap L $
+nnoremap H :tabprev<CR>
+nnoremap L :tabnext<CR>
+nnoremap <leader>H ^
+nnoremap <leader>L $
 imap jk <ESC>
 imap kj <ESC>
 nnoremap <leader>1 1gt

@@ -42,6 +42,8 @@ set ruler
 
 " Blink cursor on error instead of beeping (grr)
 set visualbell
+" Don't flash the screen tho
+set t_vb=
 
 " Encoding
 set encoding=utf-8

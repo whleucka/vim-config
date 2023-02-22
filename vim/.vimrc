@@ -119,6 +119,7 @@ let g:lightline = {'colorscheme' : 'tokyonight'}
 hi Normal guibg=NONE ctermbg=NONE
 
 " Mappings
+nnoremap <ESC> :noh<CR><ESC>
 nnoremap <leader>w :update!<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>h ^

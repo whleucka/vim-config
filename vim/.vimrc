@@ -121,13 +121,8 @@ hi Normal guibg=NONE ctermbg=NONE
 " Mappings
 nnoremap <leader>w :update!<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <C-p> :FZF<CR>
-nnoremap H :tabprev<CR>
-nnoremap L :tabnext<CR>
-nnoremap <leader>H ^
-nnoremap <leader>L $
-imap jk <ESC>
-imap kj <ESC>
+nnoremap <leader>h ^
+nnoremap <leader>l $
 nnoremap <leader>1 1gt
 nnoremap <leader>2 2gt
 nnoremap <leader>3 3gt
@@ -138,3 +133,8 @@ nnoremap <leader>7 7gt
 nnoremap <leader>8 8gt
 nnoremap <leader>9 9gt
 nnoremap <leader>0 :tablast<CR>
+nnoremap <C-p> :FZF<CR>
+nnoremap H :tabprev<CR>
+nnoremap L :tabnext<CR>
+imap jk <ESC>
+imap kj <ESC>

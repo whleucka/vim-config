@@ -121,7 +121,7 @@ hi Normal guibg=NONE ctermbg=NONE
 
 " Mappings
 map Q <nop>
-nnoremap <ESC> :noh<CR>
+nnoremap <ESC><ESC> :noh<CR>
 nnoremap <leader>w :update!<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>h ^

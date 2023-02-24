@@ -8,6 +8,9 @@ filetype off
 call plug#begin()
 
 Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-repeat'
 "Plug 'morhetz/gruvbox'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'itchyny/lightline.vim'
@@ -22,8 +25,6 @@ syntax on
 filetype plugin indent on
 
 let mapleader = " "
-
-set nowrap
 
 set noswapfile
 set nobackup
@@ -60,9 +61,9 @@ set statusline+=%#warningmsg#
 
 " Formatting
 set colorcolumn=80
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set noshiftround
 set smartindent
@@ -134,8 +135,17 @@ nnoremap <leader>7 7gt
 nnoremap <leader>8 8gt
 nnoremap <leader>9 9gt
 nnoremap <leader>0 :tablast<CR>
+nnoremap <leader>= :vs<CR>
+nnoremap <leader>- :sp<CR>
 nnoremap <C-p> :FZF<CR>
 nnoremap H :tabprev<CR>
 nnoremap L :tabnext<CR>
+nnoremap j gj
+nnoremap k gk
 imap jk <ESC>
 imap kj <ESC>
+
+vnoremap < <gv
+xnoremap < <gv
+vnoremap > >gv
+xnoremap > >gv

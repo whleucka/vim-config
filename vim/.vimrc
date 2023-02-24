@@ -138,10 +138,6 @@ nnoremap <leader>9 9gt
 nnoremap <leader>0 :tablast<CR>
 nnoremap <leader>= :vs<CR>
 nnoremap <leader>- :sp<CR>
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
 nnoremap <C-p> :FZF<CR>
 nnoremap H :tabprev<CR>
 nnoremap L :tabnext<CR>

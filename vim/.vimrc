@@ -101,7 +101,7 @@ set incsearch
 set ignorecase
 set smartcase
 set showmatch
-set mouse=a
+set mouse=
 
 
 " Color scheme (terminal)

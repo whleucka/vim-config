@@ -124,8 +124,8 @@ map Q <nop>
 nnoremap <ESC><ESC> :noh<CR>
 nnoremap <leader>w :update!<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>h ^
-nnoremap <leader>l $
+nnoremap <leader>, ^
+nnoremap <leader>. $
 nnoremap <leader>1 1gt
 nnoremap <leader>2 2gt
 nnoremap <leader>3 3gt
@@ -136,8 +136,12 @@ nnoremap <leader>7 7gt
 nnoremap <leader>8 8gt
 nnoremap <leader>9 9gt
 nnoremap <leader>0 :tablast<CR>
-nnoremap <leader>= :vs<CR>
-nnoremap <leader>- :sp<CR>
+nnoremap <leader>h :<C-w>h<CR>
+nnoremap <leader>j :<C-w>j<CR>
+nnoremap <leader>k :<C-w>k<CR>
+nnoremap <leader>l :<C-w>l<CR>
+nnoremap <C-=> :vs<CR>
+nnoremap <C--> :sp<CR>
 nnoremap <C-p> :FZF<CR>
 nnoremap H :tabprev<CR>
 nnoremap L :tabnext<CR>

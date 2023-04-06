@@ -140,8 +140,8 @@ nnoremap <leader>h :<C-w>h<CR>
 nnoremap <leader>j :<C-w>j<CR>
 nnoremap <leader>k :<C-w>k<CR>
 nnoremap <leader>l :<C-w>l<CR>
-nnoremap <C-=> :vs<CR>
-nnoremap <C--> :sp<CR>
+nnoremap <leader>= :vs<CR>
+nnoremap <leader>- :sp<CR>
 nnoremap <C-p> :FZF<CR>
 nnoremap H :tabprev<CR>
 nnoremap L :tabnext<CR>

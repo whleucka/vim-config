@@ -136,10 +136,10 @@ nnoremap <leader>7 7gt
 nnoremap <leader>8 8gt
 nnoremap <leader>9 9gt
 nnoremap <leader>0 :tablast<CR>
-nnoremap <leader>h :<C-w>h<CR>
-nnoremap <leader>j :<C-w>j<CR>
-nnoremap <leader>k :<C-w>k<CR>
-nnoremap <leader>l :<C-w>l<CR>
+nnoremap <leader>h <C-w>h<CR>
+nnoremap <leader>j <C-w>j<CR>
+nnoremap <leader>k <C-w>k<CR>
+nnoremap <leader>l <C-w>l<CR>
 nnoremap <leader>= :vs<CR>
 nnoremap <leader>- :sp<CR>
 nnoremap <C-p> :FZF<CR>
